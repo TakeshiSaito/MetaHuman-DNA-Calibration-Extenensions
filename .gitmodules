@@ -1,0 +1,3 @@
+[submodule "epic/MetaHuman-DNA-Calibration"]
+	path = epic/MetaHuman-DNA-Calibration
+	url = https://github.com/EpicGames/MetaHuman-DNA-Calibration
