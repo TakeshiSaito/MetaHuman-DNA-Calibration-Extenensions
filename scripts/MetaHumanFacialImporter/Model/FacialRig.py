@@ -25,15 +25,19 @@ class FacsDrivenController:
 
 
 def load_ctrls() -> Dict[str, List[FacsDrivenController]]:
-    arkit_table_file = Path(os.getenv('RESOURCE_ROOT')) / 'arkit_table.json'
-    with open(arkit_table_file, 'r') as file:
+    arkit_table_file = Path(__file__).parent.parent / 'resources' / 'arkit_ctrl.json'
+    with arkit_table_file.open('r') as file:
         arkit_table: Dict[str, Dict[str, float]] = json.load(file)
 
     action_unit_ctrls = {}
+
+
+
     for facs, ctrls in arkit_table.items():
 
         driven_ctrls = []
         for driven_ctrl_attr in ctrls:
+            print(driven_ctrl_attr)
             ctrl_name = driven_ctrl_attr.split('.')[0]
             attr_name = driven_ctrl_attr.split('.')[1]
 
@@ -41,3 +45,5 @@ def load_ctrls() -> Dict[str, List[FacsDrivenController]]:
             driven_ctrls.append(ctrl)
 
         action_unit_ctrls[facs] = driven_ctrls
+
+    return action_unit_ctrls

@@ -15,12 +15,13 @@ class Presenter:
         self.__view.show()
 
     def on_import_csv(self, path):
-        try:
-            ImportFacialAnimUseCase.execute(path)
-        except FileNotFoundError as e:
-            self.__view.show_error(str(e))
-        except InValidFileTypeError as e:
-            self.__view.show_error(str(e))
+        ImportFacialAnimUseCase.execute(path)
+        # try:
+        #     ImportFacialAnimUseCase.execute(path)
+        # except FileNotFoundError as e:
+        #     self.__view.show_error(str(e))
+        # except InValidFileTypeError as e:
+        #     self.__view.show_error(str(e))
 
     def on_import_rig(self, path):
         ImportRigUseCase.execute(path)
