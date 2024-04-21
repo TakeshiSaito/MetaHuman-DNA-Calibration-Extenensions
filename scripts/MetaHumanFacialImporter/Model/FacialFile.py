@@ -35,10 +35,6 @@ def load_facial_file(path: str, frame_rate: float) -> (List[float], Dict[str, Li
     return frames, action_unit_values
 
 
-def in_import_range(frame: float, start_frame: int, end_frame: int) -> bool:
-    return start_frame <= frame <= end_frame
-
-
 def timecode_to_fps(time_code: str, frame_rate: float) -> float:
     time_code_components = time_code.split(':')
     time_delta = datetime.timedelta(hours=int(time_code_components[0]),
