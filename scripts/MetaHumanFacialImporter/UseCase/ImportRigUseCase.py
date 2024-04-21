@@ -2,7 +2,7 @@ from pathlib import Path
 from dna_viewer import DNA, RigConfig, build_rig
 
 CURRENT_FILE = Path(__file__)
-CONTENT_ROOT = CURRENT_FILE.parent.parent.parent
+CONTENT_ROOT = CURRENT_FILE.parent.parent.parent.parent
 DNA_CALIB_ROOT = f'{CONTENT_ROOT}/epic/MetaHuman-DNA-Calibration'
 DNA_CALIB_DATA_PATH = f'{DNA_CALIB_ROOT}/data'
 GUI_PATH = f'{DNA_CALIB_DATA_PATH}/gui.ma'
