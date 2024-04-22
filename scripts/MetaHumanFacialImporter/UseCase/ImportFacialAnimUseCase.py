@@ -12,6 +12,7 @@ def execute(path: str):
 
     fps = Framerate.get_fps()
     ctrls = FacialRig.load_ctrls()
+    print(ctrls)
 
     frames, action_unit_values = FacialFile.load_facial_file(path, fps)
     Animation.set_keys(frames, action_unit_values,ctrls)
