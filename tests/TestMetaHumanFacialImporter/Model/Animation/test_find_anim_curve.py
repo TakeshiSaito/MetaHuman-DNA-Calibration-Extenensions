@@ -1,11 +1,19 @@
 import unittest
-from maya.api import OpenMayaAnim as oma2, OpenMaya as om2
-from maya import cmds
+
+from maya import cmds, standalone
+from maya.api import OpenMaya as om2
 
 from MetaHumanFacialImporter.Model import Animation
 
 
 class TestFindAnimCurve(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        try:
+            cmds.ls()
+        except AttributeError:
+            standalone.initialize()
 
     def setUp(self):
         cmds.file(new=True, force=True)
@@ -15,8 +23,8 @@ class TestFindAnimCurve(unittest.TestCase):
         cmds.setKeyframe(f"{cube}.translateX", value=10)
 
         # 関数に渡すためのtx属性をMPlugにする
-        selections = om2.MGlobal.getSelectionListByName(cube)
-        node = selections[0]
+        selections:om2.MSelectionList = om2.MGlobal.getSelectionListByName(cube)
+        node = selections.getDependNode(0)
         fn_node = om2.MFnDependencyNode(node)
         tx_mplug = fn_node.findPlug("tx", False)
 
@@ -28,7 +36,7 @@ class TestFindAnimCurve(unittest.TestCase):
 
         # 関数に渡すためのtx属性をMPlugにする
         selections = om2.MGlobal.getSelectionListByName(cube)
-        node = selections[0]
+        node = selections.getDependNode(0)
         fn_node = om2.MFnDependencyNode(node)
         tx_mplug = fn_node.findPlug("tx", False)
 

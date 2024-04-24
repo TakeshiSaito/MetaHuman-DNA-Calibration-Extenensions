@@ -1,18 +1,26 @@
 import unittest
 
 from MetaHumanFacialImporter.Model import Animation
-from maya import cmds
+from maya import cmds, standalone
 from maya.api import OpenMayaAnim as oma2, OpenMaya as om2
 
 
 class TestCreateAnimCurve(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        try:
+            cmds.ls()
+        except AttributeError:
+            standalone.initialize()
 
     def setUp(self):
         cmds.file(new=True, force=True)
 
     def test(self):
         # まずcubeのattr plugを作成
-        cube = cmds.polyCube(n="testCube")
+        _ = cmds.polyCube(n="testCube")
+
         selection_list = om2.MSelectionList()
         selection_list.add('testCube')
         dag_path = selection_list.getDagPath(0)
@@ -22,7 +30,5 @@ class TestCreateAnimCurve(unittest.TestCase):
         tx_curve = Animation.create_anim_curve(tx_plug)
         self.assertEqual(type(tx_curve), oma2.MFnAnimCurve)
 
-        curve_name = "testCube_translateX"
-
-        selections = om2.MGlobal.getSelectionListByName(curve_name)
-        self.assertEqual(len(selections), 1)
+        selections: om2.MSelectionList = om2.MGlobal.getSelectionListByName("testCube_translateX")
+        self.assertEqual(selections.length(), 1)

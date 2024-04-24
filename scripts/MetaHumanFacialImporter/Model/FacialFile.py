@@ -35,6 +35,11 @@ def load_facial_file(path: str, frame_rate: float) -> (List[float], Dict[str, Li
     return frames, action_unit_values
 
 
+def offset_frames_to_zero(frames: List[int]) -> List[int]:
+    offset_amount = min(frames)
+    return [frame - offset_amount for frame in frames]
+
+
 def timecode_to_fps(time_code: str, frame_rate: float) -> float:
     time_code_components = time_code.split(':')
     time_delta = datetime.timedelta(hours=int(time_code_components[0]),
