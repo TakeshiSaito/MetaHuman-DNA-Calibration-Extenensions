@@ -1,7 +1,7 @@
 from typing import List, Dict
 
 from maya.api import OpenMayaAnim as oma2, OpenMaya as om2
-
+from maya import cmds
 from MetaHumanFacialImporter.Model.FacialRig import FacsDrivenController
 
 anim_curve_cache: Dict[str, oma2.MFnAnimCurve] = {}
@@ -63,3 +63,10 @@ def get_depend_node(target: str) -> om2.MObject:
     selection: om2.MSelectionList = om2.MGlobal.getSelectionListByName(target)
     depend_node = selection.getDependNode(0)
     return depend_node
+
+
+def set_playbackrange(frames: List[int]):
+    min_frame = min(frames)
+    max_frame = max(frames)
+    cmds.playbackOptions(min=min_frame)
+    cmds.playbackOptions(max=max_frame)

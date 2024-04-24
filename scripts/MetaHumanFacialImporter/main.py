@@ -1,5 +1,5 @@
 from MetaHumanFacialImporter import Presenter
-from MetaHumanFacialImporter.Model import FacialRig
+from MetaHumanFacialImporter.Model import FacialRig, Animation, FacialFile
 from MetaHumanFacialImporter.UseCase import ImportFacialAnimUseCase
 from MetaHumanFacialImporter.View import MainWindow
 import importlib
@@ -10,6 +10,8 @@ def run_main():
     importlib.reload(Presenter)
     importlib.reload(ImportFacialAnimUseCase)
     importlib.reload(FacialRig)
+    importlib.reload(Animation)
+    importlib.reload(FacialFile)
 
     main_window = MainWindow.MainWindow()
     presenter = Presenter.Presenter(main_window)
