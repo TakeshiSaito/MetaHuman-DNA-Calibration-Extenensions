@@ -5,10 +5,9 @@ from typing import List, Dict
 
 class FacsDrivenController:
 
-    def __init__(self, name, attribute, multiplier):
+    def __init__(self, name, attribute):
         self.__name = name
         self.__attribute = attribute
-        self.__multiplier = multiplier
 
     @property
     def name(self):
@@ -36,11 +35,8 @@ def load_ctrls() -> Dict[str, List[FacsDrivenController]]:
     for facs, ctrls in arkit_table.items():
 
         driven_ctrls = []
-        for driven_ctrl_attr in ctrls:
-            ctrl_name = driven_ctrl_attr.split('.')[0]
-            attr_name = driven_ctrl_attr.split('.')[1]
-
-            ctrl = FacsDrivenController(ctrl_name, attr_name, ctrls[driven_ctrl_attr])
+        for ctrl, attr in ctrls.items():
+            ctrl = FacsDrivenController(ctrl, attr)
             driven_ctrls.append(ctrl)
 
         action_unit_ctrls[facs] = driven_ctrls

@@ -1,186 +1,186 @@
 {
   "BrowInnerUp": {
-    "CTRL_L_brow_raiseIn.translateY": 1.0,
-    "CTRL_R_brow_raiseIn.translateY": 1.0,
-    "CTRL_L_brow_lateral.translateY": 1.0,
-    "CTRL_R_brow_lateral.translateY": 1.0
+    "CTRL_L_brow_raiseIn": "translateY",
+    "CTRL_R_brow_raiseIn": "translateY",
+    "CTRL_L_brow_lateral": "translateY",
+    "CTRL_R_brow_lateral": "translateY"
   },
   "BrowDownLeft": {
-    "CTRL_L_brow_down.translateY": 1.0
+    "CTRL_L_brow_down": "translateY"
   },
   "BrowDownRight": {
-    "CTRL_R_brow_down.translateY": 1.0
+    "CTRL_R_brow_down": "translateY"
   },
   "BrowOuterUpLeft": {
-    "CTRL_L_brow_raiseOut.translateY": 1.0
+    "CTRL_L_brow_raiseOut": "translateY"
   },
   "BrowOuterUpRight": {
-    "CTRL_R_brow_raiseOut.translateY": 1.0
+    "CTRL_R_brow_raiseOut": "translateY"
   },
   "EyeLookUpLeft": {
-    "CTRL_L_eye.translateY": 1.0
+    "CTRL_L_eye": "translateY"
   },
   "EyeLookUpRight": {
-    "CTRL_R_eye.translateY": 1.0
+    "CTRL_R_eye": "translateY"
   },
   "EyeLookDownLeft": {
-    "CTRL_L_eye.translateY": -1.0
+    "CTRL_L_eye": "translateY"
   },
   "EyeLookDownRight": {
-    "CTRL_R_eye.translateY": -1.0
+    "CTRL_R_eye": "translateY"
   },
   "EyeLookInLeft": {
-    "CTRL_L_eye.translateX": -1.0
+    "CTRL_L_eye": "translateX"
   },
   "EyeLookInRight": {
-    "CTRL_R_eye.translateX": 1.0
+    "CTRL_R_eye": "translateX"
   },
   "EyeLookOutLeft": {
-    "CTRL_L_eye.translateX": 1.0
+    "CTRL_L_eye": "translateX"
   },
   "EyeLookOutRight": {
-    "CTRL_R_eye.translateX": -1.0
+    "CTRL_R_eye": "translateX"
   },
   "EyeBlinkLeft": {
-    "CTRL_L_eye_blink.translateY": 1.0
+    "CTRL_L_eye_blink": "translateY"
   },
   "EyeBlinkRight": {
-    "CTRL_R_eye_blink.translateY": 1.0
+    "CTRL_R_eye_blink": "translateY"
   },
   "EyeSquintLeft": {
-    "CTRL_L_eye_squintInner.translateY": 1.0
+    "CTRL_L_eye_squintInner": "translateY"
   },
   "EyeSquintRight": {
-    "CTRL_R_eye_squintInner.translateY": 1.0
+    "CTRL_R_eye_squintInner": "translateY"
   },
   "EyeWideLeft": {
-    "CTRL_L_eye_blink.translateY": -1.0
+    "CTRL_L_eye_blink": "translateY"
   },
   "EyeWideRight": {
-    "CTRL_R_eye_blink.translateY": -1.0
+    "CTRL_R_eye_blink": "translateY"
   },
   "CheekPuff": {
-    "CTRL_L_mouth_suckBlow.translateY": 1.0,
-    "CTRL_R_mouth_suckBlow.translateY": 1.0
+    "CTRL_L_mouth_suckBlow": "translateY",
+    "CTRL_R_mouth_suckBlow": "translateY"
   },
   "CheekSquintLeft": {
-    "CTRL_L_eye_cheekRaise.translateY": 1.0
+    "CTRL_L_eye_cheekRaise": "translateY"
   },
   "CheekSquintRight": {
-    "CTRL_R_eye_cheekRaise.translateY": 1.0
+    "CTRL_R_eye_cheekRaise": "translateY"
   },
   "NoseSneerLeft": {
-    "CTRL_L_nose.translateY": 1.0
+    "CTRL_L_nose": "translateY"
   },
   "NoseSneerRight": {
-    "CTRL_R_nose.translateY": 1.0
+    "CTRL_R_nose": "translateY"
   },
   "JawOpen": {
-    "CTRL_C_jaw.translateY": 1.0
+    "CTRL_C_jaw": "translateY"
   },
   "JawForward": {
-    "CTRL_C_jaw_fwdBack.translateY": -1.0
+    "CTRL_C_jaw_fwdBack": "translateY"
   },
   "JawLeft": {
-    "CTRL_C_jaw.translateX": -1.0
+    "CTRL_C_jaw": "translateX"
   },
   "JawRight": {
-    "CTRL_C_jaw.translateX": 1.0
+    "CTRL_C_jaw": "translateX"
   },
   "MouthFunnel": {
-    "CTRL_L_mouth_funnelU.translateY": 1.0,
-    "CTRL_R_mouth_funnelU.translateY": 1.0,
-    "CTRL_L_mouth_funnelD.translateY": 1.0,
-    "CTRL_R_mouth_funnelD.translateY": 1.0
+    "CTRL_L_mouth_funnelU": "translateY",
+    "CTRL_R_mouth_funnelU": "translateY",
+    "CTRL_L_mouth_funnelD": "translateY",
+    "CTRL_R_mouth_funnelD": "translateY"
   },
   "MouthPucker": {
-    "CTRL_L_mouth_funnelU.translateY": 0.75,
-    "CTRL_R_mouth_funnelU.translateY": 0.75,
-    "CTRL_L_mouth_funnelD.translateY": 0.75,
-    "CTRL_R_mouth_funnelD.translateY": 0.75,
-    "CTRL_L_mouth_purseU.translateY": 1.0,
-    "CTRL_R_mouth_purseU.translateY": 1.0,
-    "CTRL_L_mouth_purseD.translateY": 1.0,
-    "CTRL_R_mouth_purseD.translateY": 1.0,
-    "CTRL_L_mouth_towardsU.translateY": 0.4,
-    "CTRL_R_mouth_towardsU.translateY": 0.4,
-    "CTRL_L_mouth_towardsD.translateY": 0.4,
-    "CTRL_R_mouth_towardsD.translateY": 0.4
+    "CTRL_L_mouth_funnelU": "translateY",
+    "CTRL_R_mouth_funnelU": "translateY",
+    "CTRL_L_mouth_funnelD": "translateY",
+    "CTRL_R_mouth_funnelD": "translateY",
+    "CTRL_L_mouth_purseU": "translateY",
+    "CTRL_R_mouth_purseU": "translateY",
+    "CTRL_L_mouth_purseD": "translateY",
+    "CTRL_R_mouth_purseD": "translateY",
+    "CTRL_L_mouth_towardsU": "translateY",
+    "CTRL_R_mouth_towardsU": "translateY",
+    "CTRL_L_mouth_towardsD": "translateY",
+    "CTRL_R_mouth_towardsD": "translateY"
   },
   "MouthLeft": {
-    "CTRL_C_mouth.translateX": 1.0
+    "CTRL_C_mouth": "translateX"
   },
   "MouthRight": {
-    "CTRL_C_mouth.translateX": -1.0
+    "CTRL_C_mouth": "translateX"
   },
   "MouthRollUpper": {
-    "CTRL_L_mouth_lipsRollU.translateY": 1.0,
-    "CTRL_R_mouth_lipsRollU.translateY": 1.0
+    "CTRL_L_mouth_lipsRollU": "translateY",
+    "CTRL_R_mouth_lipsRollU": "translateY"
   },
   "MouthRollLower": {
-    "CTRL_L_mouth_lipsRollD.translateY": 1.0,
-    "CTRL_R_mouth_lipsRollD.translateY": 1.0
+    "CTRL_L_mouth_lipsRollD": "translateY",
+    "CTRL_R_mouth_lipsRollD": "translateY"
   },
   "MouthShrugUpper": {
-    "CTRL_L_jaw_ChinRaiseU.translateY": 1.0,
-    "CTRL_R_jaw_ChinRaiseU.translateY": 1.0
+    "CTRL_L_jaw_ChinRaiseU": "translateY",
+    "CTRL_R_jaw_ChinRaiseU": "translateY"
   },
   "MouthShrugLower": {
-    "CTRL_L_jaw_ChinRaiseD.translateY": 1.0,
-    "CTRL_R_jaw_ChinRaiseD.translateY": 1.0
+    "CTRL_L_jaw_ChinRaiseD": "translateY",
+    "CTRL_R_jaw_ChinRaiseD": "translateY"
   },
   "MouthClose": {
-    "CTRL_C_jaw.translateY": 1.0,
-    "CTRL_L_mouth_lipsTogetherU.translateY": 1.0,
-    "CTRL_R_mouth_lipsTogetherU.translateY": 1.0,
-    "CTRL_L_mouth_lipsTogetherD.translateY": 1.0,
-    "CTRL_R_mouth_lipsTogetherD.translateY": 1.0
+    "CTRL_C_jaw": "translateY",
+    "CTRL_L_mouth_lipsTogetherU": "translateY",
+    "CTRL_R_mouth_lipsTogetherU": "translateY",
+    "CTRL_L_mouth_lipsTogetherD": "translateY",
+    "CTRL_R_mouth_lipsTogetherD": "translateY"
   },
   "MouthSmileLeft": {
-    "CTRL_L_mouth_cornerPull.translateY": 1.0
+    "CTRL_L_mouth_cornerPull": "translateY"
   },
   "MouthSmileRight": {
-    "CTRL_R_mouth_cornerPull.translateY": 1.0
+    "CTRL_R_mouth_cornerPull": "translateY"
   },
   "MouthFrownLeft": {
-    "CTRL_L_mouth_cornerDepress.translateY": 1.0
+    "CTRL_L_mouth_cornerDepress": "translateY"
   },
   "MouthFrownRight": {
-    "CTRL_R_mouth_cornerDepress.translateY": 1.0
+    "CTRL_R_mouth_cornerDepress": "translateY"
   },
   "MouthDimpleLeft": {
-    "CTRL_L_mouth_dimple.translateY": 1.0
+    "CTRL_L_mouth_dimple": "translateY"
   },
   "MouthDimpleRight": {
-    "CTRL_R_mouth_dimple.translateY": 1.0
+    "CTRL_R_mouth_dimple": "translateY"
   },
   "MouthUpperUpLeft": {
-    "CTRL_L_mouth_upperLipRaise.translateY": 1.0
+    "CTRL_L_mouth_upperLipRaise": "translateY"
   },
   "MouthUpperUpRight": {
-    "CTRL_R_mouth_upperLipRaise.translateY": 1.0
+    "CTRL_R_mouth_upperLipRaise": "translateY"
   },
   "MouthLowerDownLeft": {
-    "CTRL_L_mouth_lowerLipDepress.translateY": 1.0
+    "CTRL_L_mouth_lowerLipDepress": "translateY"
   },
   "MouthLowerDownRight": {
-    "CTRL_R_mouth_lowerLipDepress.translateY": 1.0
+    "CTRL_R_mouth_lowerLipDepress": "translateY"
   },
   "MouthPressLeft": {
-    "CTRL_L_mouth_pressU.translateY": 1.0,
-    "CTRL_L_mouth_pressD.translateY": 1.0
+    "CTRL_L_mouth_pressU": "translateY",
+    "CTRL_L_mouth_pressD": "translateY"
   },
   "MouthPressRight": {
-    "CTRL_R_mouth_pressU.translateY": 1.0,
-    "CTRL_R_mouth_pressD.translateY": 1.0
+    "CTRL_R_mouth_pressU": "translateY",
+    "CTRL_R_mouth_pressD": "translateY"
   },
   "MouthStretchLeft": {
-    "CTRL_L_mouth_stretch.translateY": 1.0
+    "CTRL_L_mouth_stretch": "translateY"
   },
   "MouthStretchRight": {
-    "CTRL_R_mouth_stretch.translateY": 1.0
+    "CTRL_R_mouth_stretch": "translateY"
   },
   "TongueOut": {
-    "CTRL_C_tongue_inOut.translateY": -1.0
+    "CTRL_C_tongue_inOut": "translateY"
   }
 }

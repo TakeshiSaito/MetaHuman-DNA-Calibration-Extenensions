@@ -20,7 +20,7 @@ class TestAddKeys(TestCase):
 
     def test_add_keys(self):
         locator = cmds.spaceLocator(name='head_loc')[0]
-        facs_driven_ctrl = FacsDrivenController(locator, 'translateX', 1.0)
+        facs_driven_ctrl = FacsDrivenController(locator, 'translateX')
 
         Animation.add_keys(facs_driven_ctrl, [0.5, 0.7], [0.0, 1.0])
 
