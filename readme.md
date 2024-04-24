@@ -22,6 +22,10 @@ LiveLinkFaceから出力したCSVファイルを、maya上のメタヒューマ�
 
 ### 使い方
 
+### 起動方法
+
+メニューバーの「MetaHuman」から「MetaHuman Facial Importer」を選択します。
+
 #### Import rig | リグのインポート
 
 フェイシャルアニメーション再生に必要なリグつきで、メタヒューマンを読み込むことができます。
