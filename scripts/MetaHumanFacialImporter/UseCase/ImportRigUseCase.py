@@ -1,4 +1,6 @@
 from pathlib import Path
+
+from MetaHumanFacialImporter.Exceptions import InValidFileTypeError
 from dna_viewer import DNA, RigConfig, build_rig
 
 CURRENT_FILE = Path(__file__)
@@ -11,6 +13,12 @@ ADDITIONAL_ASSEMBLE_SCRIPT = f'{DNA_CALIB_DATA_PATH}/additional_assemble_script.
 
 
 def execute(dna_path: str, *args, **kwargs):
+    dna_path = Path(dna_path)
+    if dna_path.suffix != '.dna':
+        raise InValidFileTypeError(f'Invalid file extension : {dna_path}. Please use .dna file')
+    if not dna_path.exists():
+        raise FileNotFoundError(f'No such file : {dna_path}')
+
     dna = DNA(dna_path)
     print('---' * 100)
     print(GUI_PATH)

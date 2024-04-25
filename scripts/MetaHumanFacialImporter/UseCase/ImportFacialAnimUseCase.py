@@ -7,7 +7,7 @@ def execute(path: str):
     if not FacialFile.check_exists(path):
         raise FileNotFoundError(f"No such file : {path}")
 
-    if not FacialFile.check_exists(path):
+    if not FacialFile.check_extension(path):
         raise InValidFileTypeError(f"Invalid file extension : {path}. Please use .csv file")
 
     fps = Framerate.get_fps()
