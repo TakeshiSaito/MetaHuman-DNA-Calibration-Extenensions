@@ -3,7 +3,7 @@ from pathlib import Path
 from PySide2.QtCore import Signal
 from PySide2.QtGui import QIcon
 from PySide2.QtUiTools import QUiLoader
-from PySide2.QtWidgets import QMainWindow, QFileDialog
+from PySide2.QtWidgets import QMainWindow, QFileDialog, QMessageBox
 from maya import cmds
 from maya.app.general.mayaMixin import MayaQWidgetBaseMixin
 
@@ -48,4 +48,4 @@ class MainWindow(MayaQWidgetBaseMixin, QMainWindow):
         self.__widget.lineEdit_csv_dialog.setText(file_path)
 
     def show_error(self, message: str):
-        self.show_error(message)
+        QMessageBox.critical(self, "Error", message)
