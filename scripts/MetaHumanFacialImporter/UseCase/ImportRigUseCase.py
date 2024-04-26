@@ -19,7 +19,7 @@ def execute(dna_path: str, *args, **kwargs):
     if not dna_path.exists():
         raise FileNotFoundError(f'No such file : {dna_path}')
 
-    dna = DNA(dna_path)
+    dna = DNA(dna_path.as_posix())
     print('---' * 100)
     print(GUI_PATH)
     print(ANALOG_GUI_PATH)
